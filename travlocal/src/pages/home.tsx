@@ -1,9 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AnimatedPhoneSection from "@/components/AnimatedPhoneSection";
-import HamburgerMenu from "@/components/navigation/HamburgerMenu";
-import Nav from "@/components/navigation/Nav";
 
 
 const Page: React.FC = () => {
@@ -14,9 +11,21 @@ const Page: React.FC = () => {
 
   return (
     <>
-      <HamburgerMenu/>
+      {/* Hamburger Menu */}
+      <input type="checkbox" id="navi-toggle" className="checkbox" />
+      <label htmlFor="navi-toggle" className="button">
+        <span className="icon">&nbsp;</span>
+      </label>
+      <div className="background">&nbsp;</div>
 
-      <Nav />
+      {/* Navigation */}
+      <nav className="nav">
+        <ul className="list">
+          <li className="item"><a className="link">Home page</a></li>
+          <li className="item"><a className="link">Our Team</a></li>
+          <li className="item"><a className="link">Issue Report</a></li>
+        </ul>
+      </nav>
 
       {/* Hero Section */}
       <section className="bg-dark py-5 vh-100 d-flex align-items-end">
@@ -40,8 +49,6 @@ const Page: React.FC = () => {
         </div>
       </section>
 
-      <AnimatedPhoneSection />
-      
       {/* Feature Section */}
       <section className="bg-light py-5">
         <div className="container">
