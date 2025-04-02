@@ -4,6 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AnimatedPhoneSection from "@/components/AnimatedPhoneSection";
 import HamburgerMenu from "@/components/navigation/HamburgerMenu";
 import Nav from "@/components/navigation/Nav";
+import FeatureSection from "@/components/FeatureSection";
+import ProfileSection from "@/components/ProfileSection";
+import HeroSection from "@/components/HeroSection";
 
 
 const Page: React.FC = () => {
@@ -19,67 +22,15 @@ const Page: React.FC = () => {
       <Nav />
 
       {/* Hero Section */}
-      <section className="bg-dark py-5 vh-100 d-flex align-items-end">
-        <div className="container h-100">
-          <div className="row h-100">
-            <div className="col-lg-8 col-xl-7 col-xxl-6 d-flex flex-column justify-content-end">
-              <div className="text-lg-start text-md-center text-sm-center">
-                <h1 className="display-5 fw-bolder text-white mb-2">
-                  Travel Like a Local. <br /> Guide Like a Pro.
-                </h1>
-                <p className="lead fw-normal text-white-50 mb-4">
-                  Join a community where you explore new cities, earn rewards, and make lasting memories.
-                </p>
-                <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-lg-start">
-                  <a className="btn btn-outline-light btn-lg px-4" href="#">App Store</a>
-                  <a className="btn btn-outline-light btn-lg px-4" href="#">Google Play</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection/>
 
       <AnimatedPhoneSection />
       
       {/* Feature Section */}
-      <section className="bg-light py-5">
-        <div className="container">
-          <div className="row py-5">
-            {[...Array(4)].map((_, index) => (
-              <div key={index} className="px-5 feature-card col-md-6 col-3">
-                <div className="img-container">
-                  <img src="" alt="Feature" />
-                </div>
-                <div className="text-container">
-                  <h3>Match with Verified Locals</h3>
-                  <div>Connect with trusted guides for authentic experiences.</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FeatureSection />
 
       {/* Profile Section */}
-      <section className="bg-dark vh-100 d-flex justify-content-center align-items-center">
-        <div className="container row">
-          {["Local guide", "Traveler"].map((role, index) => (
-            <div key={index} className="p-5 col-6">
-              <div className="card profile-card px-5">
-                <div className="card-body text-center">
-                  <div className="w-50 rounded-circle profile-img mb-3 bg-dark ratio ratio-1x1 mx-auto">
-                    <img src="#" alt="User Profile" />
-                  </div>
-                  <h3 className="card-title mb-2">John Doe</h3>
-                  <p className="card-text text-muted mb-3">{role}</p>
-                  <p className="card-text mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <ProfileSection />
 
       {/* FAQ Section */}
       <section className="bg-light p-5">

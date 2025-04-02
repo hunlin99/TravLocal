@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,59 +11,55 @@ const AnimatedStepsSection = () => {
   const stepsRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
-    // Ensure sectionRef.current exists before querying child elements
     if (sectionRef.current) {
-      // Select all step elements inside the section
       stepsRef.current = Array.from(sectionRef.current.querySelectorAll(".step")) as HTMLDivElement[];
 
-      // Setup GSAP animations for each step
-      const ctx = gsap.context(() => {
-        // Pin the section while user scrolls through steps
-        ScrollTrigger.create({
+      const tl = gsap.timeline({
+        scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: "+=100%", // Extends scroll duration
-          pin: true,
-          scrub: 1,
-        });
-
-        stepsRef.current.forEach((step, index) => {
-          gsap.fromTo(
-            step,
-            { opacity: 0, y: 50 }, // Start with opacity 0, slightly below
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1,
-              scrollTrigger: {
-                trigger: sectionRef.current,
-                start: `top+=${index * 25}% center`, // Adjusted for better timing
-                end: `top+=${(index + 1) * 25}% center`, // Each step takes a third of the scroll area
-                toggleActions: "play none none reverse", // Trigger animation on scroll
-                scrub: 1, // Make it smooth with scrub
-              },
-            }
-          );
-        });
+          end: "+=200%", // Ensures enough scroll space
+          pin: true, // Keeps section fixed while scrolling
+          scrub: 1, // Makes animation responsive to scroll
+        },
       });
 
-      return () => ctx.revert(); // Cleanup GSAP context on component unmount
+      stepsRef.current.forEach((step, index) => {
+        tl.to(step, { opacity: 1, y: 0, duration: 1 }) // Step fades in
+          .to(step, { opacity: 0, y: -50, duration: 1 }, "+=1"); // Step fades out before the next one starts
+      });
     }
-  }, []); // Empty dependency array ensures this effect only runs once on mount
+  }, []);
 
   return (
     <section
       ref={sectionRef}
-      className="vh-100 d-flex flex-column justify-content-center align-items-center bg-dark text-light text-center"
+      className="AnimatedStepsSection vw-100 vh-100 d-flex flex-column justify-content-center align-items-center text-light text-center"
     >
-      <div className="step fs-1 mb-5" style={{ opacity: 0, transform: "translateY(50px)" }}>
-        Step 1: Open the App
+      <div className="vw-100 vh-80 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
+        <div className="col-4 d-flex align-items-center justify-content-center">Get start</div>
+        <div className="col-4 start"> <img src="image/phone_14.png" alt="" className="p-5" /></div>
+        <div className="col-4 d-flex align-items-center justify-content-center">Sign in</div>
       </div>
-      <div className="step fs-1 mb-5" style={{ opacity: 0, transform: "translateY(50px)" }}>
-        Step 2: Choose Your Guide
+      <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
+        <div className="col-4 d-flex align-items-center justify-content-center">Free ticket</div>
+        <div className="col-4"><img src="image/phone_14.png" alt="" className="p-5" /></div>
+        <div className="col-4 d-flex align-items-center justify-content-center">Verify</div>
       </div>
-      <div className="step fs-1 mb-5" style={{ opacity: 0, transform: "translateY(50px)" }}>
-        Step 3: Enjoy Your Trip!
+      <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
+        <div className="col-4 d-flex align-items-center justify-content-center">Find your Guide</div>
+        <div className="col-4"><img src="image/phone_14.png" alt="" className="p-5" /></div>
+        <div className="col-4 d-flex align-items-center justify-content-center">Match</div>
+      </div>
+      <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
+        <div className="col-4 d-flex align-items-center justify-content-center">Be a Guide</div>
+        <div className="col-4"><img src="image/phone_14.png" alt="" className="p-5" /></div>
+        <div className="col-4 d-flex align-items-center justify-content-center">Earning</div>
+      </div>
+      <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
+        <div className="col-4 d-flex align-items-center justify-content-center">Explore more</div>
+        <div className="col-4"><img src="image/phone_14.png" alt="" className="p-5" /></div>
+        <div className="col-4 d-flex align-items-center justify-content-center">Redeem</div>
       </div>
     </section>
   );
