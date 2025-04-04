@@ -1,6 +1,7 @@
 "use client"; // If needed for interactivity
 
 import React from "react";
+import Image from "next/image";
 
 interface Feature {
   title: string;
@@ -37,7 +38,7 @@ const FeatureCard: React.FC<Feature & { index: number }> = ({ title, description
   return (
     <div className="col-md-6 col-12 p-5 feature-card" >
       <div className="img-container bg-light">
-        <img src={imageSrc} alt={title} className="img-fluid" />
+      <Image src={imageSrc} alt={title} width={300} height={300} className="img-fluid" />
       </div>
       <div className="text-container" style={{ backgroundColor: backgroundColors[index % backgroundColors.length] }}>
         <h3>{title}</h3>

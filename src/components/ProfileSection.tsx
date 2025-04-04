@@ -1,6 +1,7 @@
 "use client"; // If using hooks or interactivity
 
 import React from "react";
+import Image from "next/image";
 
 interface Profile {
   name: string;
@@ -30,7 +31,7 @@ const ProfileCard: React.FC<Profile> = ({ name, role, description, imageSrc }) =
       <div className="card profile-card px-5">
         <div className="card-body text-center">
           <div className="w-50 rounded-circle profile-img mb-3 bg-dark ratio ratio-1x1 mx-auto">
-            <img src={imageSrc} alt={`${name} Profile`} className="img-fluid rounded-circle" />
+          <Image src={imageSrc} alt={`${name} Profile`} width={150} height={150} className="img-fluid rounded-circle" />
           </div>
           <h3 className="card-title mb-2">{name}</h3>
           <p className="card-text text-muted mb-3">{role}</p>

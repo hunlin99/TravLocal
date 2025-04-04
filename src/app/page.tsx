@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AnimatedPhoneSection from "@/components/AnimatedPhoneSection";
 import HamburgerMenu from "@/components/navigation/HamburgerMenu";
@@ -49,7 +48,8 @@ const Page: React.FC = () => {
               </h2>
               <div id={`collapse${num}`} className="accordion-collapse collapse" aria-labelledby={`heading${num}`} data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                  <strong>This is the {num} item's accordion body.</strong> It is hidden by default.
+                <strong>This is the {num} item&apos;s accordion body.</strong>
+                It is hidden by default.
                 </div>
               </div>
             </div>
