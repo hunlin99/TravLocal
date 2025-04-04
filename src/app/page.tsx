@@ -12,7 +12,7 @@ import HeroSection from "@/components/HeroSection";
 const Page: React.FC = () => {
   useEffect(() => {
     // Import Bootstrap's JS only on the client
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
   return (
@@ -43,7 +43,7 @@ const Page: React.FC = () => {
                   className="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target={`#collapse${num}`}
+                  data-bs-target={"#collapse" + num}
                   aria-expanded="true"
                   aria-controls={`collapse${num}`}
                 >
