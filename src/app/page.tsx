@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AnimatedPhoneSection from "@/components/AnimatedPhoneSection";
@@ -10,10 +11,6 @@ import HeroSection from "@/components/HeroSection";
 
 
 const Page: React.FC = () => {
-  useEffect(() => {
-    // Import Bootstrap's JS only on the client
-    import("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
 
   return (
     <>
