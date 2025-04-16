@@ -1,14 +1,21 @@
-"use client";
+ "use client";
 
-import React from "react";   
+import React from "react";
+
 const HeroSection = () => {
   return (
     <section
-      className="HeroSection py-5 vh-100 d-flex align-items-end text-white bg-dark"
+      className="HeroSection py-5 vh-100 d-flex align-items-end text-white"
+      style={{
+        backgroundImage: `url('/image/cover-img.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
-      <div className="container h-100">
+      <div className="container h-100 py-5">
         <div className="row h-100">
-          <div className="col-lg-8 col-xl-7 col-xxl-6 d-flex flex-column justify-content-end">
+          <div className="col-lg-8 col-xl-7 col-xxl-6 d-flex flex-column">
             <div className="text-lg-start text-md-center text-sm-center">
               <h1 className="display-5 fw-bolder mb-2">
                 Travel Like a Local. <br /> Guide Like a Pro.

@@ -1,0 +1,92 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+:root {
+  --bg-color-orange: #ffbb28;
+  --bg-color-beige: #fff2df;
+  --bg-color-blue: #a6d2d0;
+  --block-color-gr: #a6d2d0;
+  --block-color-ye: #ffbb28;
+  --text-color-dark: #072a3a;
+  --text-color-light: white;
+}
+
+.FeatureSection {
+  background-color: #fff;
+}
+
+.AnimatedStepsSection {
+  background-color: #fff;
+}
+
+.ProfileSection {
+  background-color: var(--bg-color-blue);
+}
+
+.featuresection-bottom-container {
+  background-color: var(--bg-color-blue);
+  width: 100%;
+  height: 180px;
+}
+
+.featuresection-bottom {
+  background-color: #fff;
+  width: 100%;
+  height: 180px;
+  border-radius: 0 0 150px;
+}
+
+.profilesection-top-container {
+  background-color: #fff;
+  width: 100%;
+  height: 180px;
+}
+
+.profilesection-top {
+  background-color: var(--bg-color-blue);
+  width: 100%;
+  height: 180px;
+  border-radius: 150px 0 0;
+}
+
+.HeroSection {
+  background-image: "url(image/cover-img.jpg)";
+  background-size: "cover";
+  background-position: "center";
+  background-repeat: "no-repeat";
+}
+
+.feature-card {
+  display: inline-block;
+  text-align: center;
+}
+
+.img-container {
+  aspect-ratio: 1;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #000;
+}
+
+.text-container {
+  box-shadow: 0 0 10px #0003;
+  padding: 120px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0 0;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.text-container h3 {
+  margin: 20px 0 10px;
+  color: #000;
+  font-size: 18px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/*# sourceMappingURL=src_app_globals_b52d8e88.css.map*/

@@ -7,55 +7,39 @@ import Nav from "@/components/navigation/Nav";
 import FeatureSection from "@/components/FeatureSection";
 import ProfileSection from "@/components/ProfileSection";
 import HeroSection from "@/components/HeroSection";
+import FAQsection from "@/components/FAQsection";
+import ActionRevealSection from "@/components/ActionRevealSection";
 
 
 const Page: React.FC = () => {
 
   return (
     <>
-      <HamburgerMenu/>
+      <HamburgerMenu />
 
       <Nav />
 
       {/* Hero Section */}
-      <HeroSection/>
+      <HeroSection />
 
       <AnimatedPhoneSection />
-      
+
       {/* Feature Section */}
       <FeatureSection />
-
+      <div className="featuresection-bottom-container">
+        <div className="featuresection-bottom">
+        </div>
+      </div>
+      <div className="profilesection-top-container">
+        <div className="profilesection-top"></div>
+      </div>
       {/* Profile Section */}
       <ProfileSection />
 
+      <ActionRevealSection />
+
       {/* FAQ Section */}
-      <section className="bg-light p-5">
-        <h1 className="text-center p-3">FAQ</h1>
-        <div className="accordion" id="accordionExample">
-          {[1, 2, 3].map((num) => (
-            <div key={num} className="accordion-item">
-              <h2 className="accordion-header" id={`heading${num}`}>
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target={"#collapse" + num}
-                  aria-expanded="true"
-                  aria-controls={`collapse${num}`}
-                >
-                  Accordion Item #{num}
-                </button>
-              </h2>
-              <div id={`collapse${num}`} className="accordion-collapse collapse" aria-labelledby={`heading${num}`} data-bs-parent="#accordionExample">
-                <div className="accordion-body">
-                <strong>This is the {num} item&apos;s accordion body.</strong>
-                It is hidden by default.
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <FAQsection />
 
       {/* Footer Section */}
       <section className="bg-dark p-5 vh-50">

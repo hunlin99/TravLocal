@@ -1,0 +1,45 @@
+.maskSection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.maskWrapper {
+  min-height: 100vh;
+}
+
+.videoMask {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: lighten;
+}
+
+.clipText {
+  font-size: 12vw;
+  font-weight: bold;
+  color: black;
+}
+
+
+.ctaContent {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* ✅ below the videoMask */
+  width: 100%;
+  max-width: 960px;
+}
