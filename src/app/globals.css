@@ -24,6 +24,9 @@ Back Ground color
 .contactForm{
   background-color: var(--bg-color-blue);
 }
+.FooterSection{
+  background-color: var(--text-color-dark);
+}
 
 /*---------------------------------------------------------------------- /
 blocks between sections
@@ -52,6 +55,9 @@ blocks between sections
   border-radius: 150px 0 0 0;
 }
 
+h1,h2,h3,h4,h5,h6,p,a{
+  color: var(--text-color-dark);
+}
 /*---------------------------------------------------------------------- /
 Hero Section{
 ----------------------------------------------------------------------- */
@@ -60,6 +66,7 @@ Hero Section{
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
+  color: white;
 }
 
 /*---------------------------------------------------------------------- /
