@@ -5,8 +5,6 @@ import styles from "./Nav.module.css";
 
 const Nav: React.FC = () => {
   return (
-
-    
     <nav className={styles.nav}>
       <ul className={styles.list}>
         <li className={styles.item}>

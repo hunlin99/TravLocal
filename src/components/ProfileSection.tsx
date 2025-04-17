@@ -16,15 +16,15 @@ interface Profile {
 
 const profiles: Profile[] = [
   {
-    name: "Aiko O.",
+    name: "JordanM.",
     role: "Local Guide",
-    description: "I love meeting travelers and showing them the real culture of my city. It’s so rewarding, and I’ve even made friends from different countries!",
+    description: "Being a guide through TravLocal has been amazing. I met Alex from France and showed him some underground jazz spots in Harlem. It didn’t feel like work — just two people vibing over music and street food. The best part? I earned a ticket to use when I visit Paris next spring! — Jordan M., Guide from NYC",
     imageSrc: "/TravLocal/image/portrait-1.jpg",
   },
   {
-    name: "Christine C.",
+    name: "Samantha W.",
     role: "Traveler",
-    description: "I got to see hidden gems that I would have never found on my own. My guide was super friendly and even took me to a local café that wasn’t on any travel blogs!",
+    description: "I used TravLocal during my trip to Tokyo, and it completely changed how I travel. My guide, Kenji, took me to a local ramen shop I would’ve never found and even taught me how to order like a local. No tour buses, no crowds — just real connection and unforgettable memories. I can’t wait to guide someone in Toronto next! — Samantha W., Traveler from Canada",
     imageSrc: "/TravLocal/image/portrait-2.jpg",
   },
 ];

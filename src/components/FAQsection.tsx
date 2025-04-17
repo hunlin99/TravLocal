@@ -5,19 +5,19 @@ import { useState } from "react";
 // Step 1: FAQ data
 const faqItems = [
   {
-    header: "Accordion Item #1",
+    header: "How does the ticket system work?",
     description:
-      "This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      "TravLocal replaces traditional payments with a ticket-based system. When you sign up, you receive a ticket to book a personalized experience with a local guide. Later, when you act as a guide in your own city, you earn another ticket for your future travels — creating a sustainable cycle of exchange.",
   },
   {
-    header: "Accordion Item #2",
+    header: "Can I choose the type of tour I want?",
     description:
-      "This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      "Yes! Our platform matches you with locals based on shared interests, preferred activities, and language. Whether you’re into food, architecture, nature, or nightlife, you can customize your travel experience to suit your preferences.",
   },
   {
-    header: "Accordion Item #3",
+    header: "Do I need to be an experienced guide to host someone?",
     description:
-      "This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      "Not at all. Anyone can be a local guide by simply sharing their knowledge and love for their city. Whether it’s your favorite coffee shop, hidden art alley, or weekend market, your authentic perspective is what makes the experience valuable.",
   },
 ];
 

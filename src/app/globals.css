@@ -13,10 +13,10 @@
 Back Ground color
 ----------------------------------------------------------------------- */
 .FeatureSection{
-  background-color: white;
+  background-color: ver(--bg-color-beige);
 }
 .AnimatedStepsSection{
-  background-color: white;
+  background-color: var(--bg-color-beige);
 }
 .ProfileSection{
   background-color: var(--bg-color-blue);
@@ -35,13 +35,13 @@ blocks between sections
 }
 
 .featuresection-bottom{
-  background-color:white;
+  background-color:var(--bg-color-beige);
   width: 100%;
   height: 180px;
   border-radius: 0 0 150px 0;
 }
 .profilesection-top-container{
-  background-color: white;
+  background-color: var(--bg-color-beige);
   width: 100%;
   height: 180px;
 }
