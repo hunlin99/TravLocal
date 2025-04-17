@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <section className="FooterSection bg-dark p-5 vh-50">
+    <section className="FooterSection p-5 vh-50">
       <div className="container d-flex justify-content-between">
         <div className="py-5 col-3">
           <div className="d-grid gap-3 text-white">

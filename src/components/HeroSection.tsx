@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="row h-100">
           <div className="col-lg-8 col-xl-7 col-xxl-6 d-flex flex-column">
             <div className="text-lg-start text-md-center text-sm-center">
-              <h1 className="display-5 fw-bolder mb-2">
+              <h1 className="text-white display-5 fw-bolder mb-2">
                 Travel Like a Local. <br /> Guide Like a Pro.
               </h1>
               <p className="lead fw-normal text-white-50 mb-4">
