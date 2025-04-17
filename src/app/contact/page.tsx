@@ -1,5 +1,6 @@
 
 "use client";
+import Footer from "@/components/footer";
 import HamburgerMenu from "@/components/navigation/HamburgerMenu";
 import Nav from "@/components/navigation/Nav";
 
@@ -37,6 +38,8 @@ export default function ContactPage() {
         </button>
       </form>
     </div>
+    <Footer />
     </ section>
+    
   );
 }

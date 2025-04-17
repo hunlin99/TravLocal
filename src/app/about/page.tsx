@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/footer";
 import HamburgerMenu from "@/components/navigation/HamburgerMenu";
 import Nav from "@/components/navigation/Nav";
 
@@ -43,7 +44,14 @@ const About = () => {
       {/* Image Showcase */}
       <div
         className="py-5 bg-image-full"
-        style={{ backgroundImage: "url('/TravLocal/image/app-mockup-18.png')", width: "100%", objectFit: "cover" }}
+        style={{
+          backgroundImage: "url('/TravLocal/image/app-mockup-18.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: "50vh" // or set a fixed height like "400px"
+        }}
       >
         <div style={{ height: "20rem" }}></div>
       </div>
@@ -105,6 +113,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
