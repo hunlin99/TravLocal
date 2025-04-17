@@ -60,7 +60,10 @@ blocks between sections
   border-radius: 150px 0 0 0;
 }
 
-
+img {
+  width: 100%;
+object-fit: cover
+;}
 
 
 /*---------------------------------------------------------------------- /
