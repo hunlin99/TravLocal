@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/ActionRevealSection.css"],"sourcesContent":[".action-keyhole-wrapper {\n  position: relative;\n  overflow: hidden;\n  z-index: 0;\n}\n\n.keyhole {\n  position: fixed;\n  inset: 0;\n  pointer-events: none;\n  background: rgba(255, 204, 100, 0.95); /* make visible */\n  clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);\n  z-index: 10;\n}\n\n\n.arrow {\n  position: absolute;\n  top: 72.5vh;\n  left: 50%;\n  z-index: 11;\n  animation: float 1s ease-in-out infinite alternate both;\n}\n\n.arrow svg {\n  transform: rotate(90deg);\n  stroke: #2d3436;\n  width: 2rem;\n  margin-left: -1rem;\n  height: auto;\n}\n\n@keyframes float {\n  from {\n    transform: translateY(-50%);\n  }\n  to {\n    transform: translateY(50%);\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;AAUA;;;;;;;;AAQA;;;;;;;;AAQA"}}]
-}

@@ -2,8 +2,16 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/TravLocal",
   "redirects": [
+    {
+      "source": "/TravLocal/",
+      "destination": "/TravLocal",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/TravLocal/$"
+    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -26,6 +34,12 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
     },
     {
       "page": "/favicon.ico",
