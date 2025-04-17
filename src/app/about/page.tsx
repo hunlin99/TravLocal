@@ -1,8 +1,14 @@
 "use client";
 
+import HamburgerMenu from "@/components/navigation/HamburgerMenu";
+import Nav from "@/components/navigation/Nav";
+
 const About = () => {
   return (
     <>
+      <HamburgerMenu />
+
+      <Nav />
       {/* Header Section */}
       <header
         className="py-5 bg-image-full"
@@ -28,7 +34,7 @@ const About = () => {
             <div className="col-lg-6">
               <h2>What is TravLocal?</h2>
               <p className="mb-0">
-              TravLocal is a community-driven travel platform designed to connect curious travelers with passionate local guides. Instead of relying on commercial tours, the app uses a unique ticket exchange system where users guide visitors in their own cities to earn tickets, which they can later use for their own travels. This reciprocal model fosters authentic experiences by matching users based on shared interests, languages, and preferred activities, allowing for fully personalized, culturally rich tours.              </p>
+                TravLocal is a community-driven travel platform designed to connect curious travelers with passionate local guides. Instead of relying on commercial tours, the app uses a unique ticket exchange system where users guide visitors in their own cities to earn tickets, which they can later use for their own travels. This reciprocal model fosters authentic experiences by matching users based on shared interests, languages, and preferred activities, allowing for fully personalized, culturally rich tours.              </p>
             </div>
           </div>
         </div>
@@ -37,7 +43,7 @@ const About = () => {
       {/* Image Showcase */}
       <div
         className="py-5 bg-image-full"
-        style={{ backgroundImage: "url('/TravLocal/image/app-mockup-18.png')" }}
+        style={{ backgroundImage: "url('/TravLocal/image/app-mockup-18.png')", width: "100%", objectFit: "cover" }}
       >
         <div style={{ height: "20rem" }}></div>
       </div>
@@ -49,7 +55,7 @@ const About = () => {
             <div className="col-lg-6">
               <h2>Why It Matters</h2>
               <p className="lead">
-              TravLocal promotes sustainable tourism by encouraging visits to hidden gems and supporting small, local businesses through strategic partnerships. With a built-in reward system, users can earn points through referrals, check-ins, and achievements, which can be redeemed for tickets, coupons, or gift cards. It’s more than just a travel app—it’s a movement that empowers locals, nurtures real connections, and makes travel more meaningful, affordable, and human.
+                TravLocal promotes sustainable tourism by encouraging visits to hidden gems and supporting small, local businesses through strategic partnerships. With a built-in reward system, users can earn points through referrals, check-ins, and achievements, which can be redeemed for tickets, coupons, or gift cards. It’s more than just a travel app—it’s a movement that empowers locals, nurtures real connections, and makes travel more meaningful, affordable, and human.
               </p>
             </div>
           </div>
