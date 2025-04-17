@@ -86,7 +86,7 @@ const AnimatedStepsSection = () => {
       <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
         <div className="col-4 d-flex align-items-center justify-content-center">Be a Guide</div>
         <div className="col-4"><Image
-          src="/image/AnimatedPhoneSection-4.png"
+          src="/TravLocal/image/AnimatedPhoneSection-4.png"
           alt="Phone preview"
           layout="responsive"
           width={1}

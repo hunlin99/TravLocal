@@ -17,22 +17,22 @@ const features: Feature[] = [
   {
     title: "Match with Verified Locals",
     description: "Connect with trusted guides for authentic experiences.",
-    imageSrc: "/image/feature-match.png",
+    imageSrc: "/TravLocal/image/feature-match.png",
   },
   {
     title: "No Money Needed Just Tickets!",
     description: "Earn and redeem tickets for unique tours.",
-    imageSrc: "/image/feature-ticket.png",
+    imageSrc: "/TravLocal/image/feature-ticket.png",
   },
   {
     title: "Explore & Earn Rewards",
     description: "Complete challenges, refer friends, and unlock perks.",
-    imageSrc: "/image/feature-rewards.png",
+    imageSrc: "/TravLocal/image/feature-rewards.png",
   },
   {
     title: "Safety First",
     description: "Verified users, in-app reporting, and emergency support for peace of mind.",
-    imageSrc: "/image/feature-safety.png",
+    imageSrc: "/TravLocal/image/feature-safety.png",
   }
 ];
 

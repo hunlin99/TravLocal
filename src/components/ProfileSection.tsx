@@ -19,13 +19,13 @@ const profiles: Profile[] = [
     name: "Aiko O.",
     role: "Local Guide",
     description: "I love meeting travelers and showing them the real culture of my city. It’s so rewarding, and I’ve even made friends from different countries!",
-    imageSrc: "/image/portrait-1.jpg",
+    imageSrc: "/TravLocal/image/portrait-1.jpg",
   },
   {
     name: "Christine C.",
     role: "Traveler",
     description: "I got to see hidden gems that I would have never found on my own. My guide was super friendly and even took me to a local café that wasn’t on any travel blogs!",
-    imageSrc: "/image/portrait-2.jpg",
+    imageSrc: "/TravLocal/image/portrait-2.jpg",
   },
 ];
 

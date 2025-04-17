@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section
       className="HeroSection py-5 vh-100 d-flex align-items-end text-white"
       style={{
-        backgroundImage: `url('/image/cover-img.jpg')`,
+        backgroundImage: `url('/TravLocal/image/cover-img.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
