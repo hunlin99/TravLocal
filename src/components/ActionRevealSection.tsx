@@ -76,10 +76,10 @@ const AnimatedStepsSection = () => {
           <h1>Ready for Authentic Adventures?</h1>
           <div className="pt-5 d-flex justify-content-center align-items-center">
             <a href="#" className="mx-3">
-              <img src="/image/app-store-btn.png" alt="Download on the App Store" height="60" />
+              <img src="/TravLocal/image/app-store-btn.png" alt="Download on the App Store" height="60" />
             </a>
             <a href="#" className="mx-3">
-              <img src="/image/google-play-btn.png" alt="Get it on Google Play" height="60" />
+              <img src="/TravLocal/image/google-play-btn.png" alt="Get it on Google Play" height="60" />
             </a>
           </div>
         </div>
