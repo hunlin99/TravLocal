@@ -109,6 +109,10 @@
   background-color: var(--bg-color-blue);
 }
 
+.contactForm {
+  background-color: var(--bg-color-blue);
+}
+
 .featuresection-bottom-container {
   background-color: var(--bg-color-blue);
   width: 100%;

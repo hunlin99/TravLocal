@@ -1,15 +1,26 @@
-import styles from "./Nav.module.css"; // Import styles
+"use client";
+
+import Link from "next/link";
+import styles from "./Nav.module.css";
 
 const Nav: React.FC = () => {
-    return (
-        <nav className={styles.nav}>
-            <ul className={styles.list}>
-                <li className={styles.item}><a className={styles.link}>Home page</a></li>
-                <li className={styles.item}><a className={styles.link}>Our Team</a></li>
-                <li className={styles.item}><a className={styles.link}>Issue Report</a></li>
-            </ul>
-        </nav>
-    );
+  return (
+
+    
+    <nav className={styles.nav}>
+      <ul className={styles.list}>
+        <li className={styles.item}>
+          <Link href="/" className={styles.link}>Home page</Link>
+        </li>
+        <li className={styles.item}>
+          <Link href="/about" className={styles.link}>Our Team</Link>
+        </li>
+        <li className={styles.item}>
+          <Link href="/contact" className={styles.link}>Issue Report</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default Nav;

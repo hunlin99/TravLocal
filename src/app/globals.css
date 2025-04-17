@@ -9,6 +9,9 @@
 }
 
 
+/*---------------------------------------------------------------------- /
+Back Ground color
+----------------------------------------------------------------------- */
 .FeatureSection{
   background-color: white;
 }
@@ -16,6 +19,9 @@
   background-color: white;
 }
 .ProfileSection{
+  background-color: var(--bg-color-blue);
+}
+.contactForm{
   background-color: var(--bg-color-blue);
 }
 
