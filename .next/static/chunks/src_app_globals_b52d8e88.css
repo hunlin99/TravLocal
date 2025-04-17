@@ -10,23 +10,28 @@
 }
 
 .FeatureSection {
-  background-color: ver(--bg-color-beige);
+  background-color: var(--bg-color-beige);
+  color: var(--text-color-dark);
 }
 
 .AnimatedStepsSection {
   background-color: var(--bg-color-beige);
+  color: var(--text-color-dark);
 }
 
 .ProfileSection {
   background-color: var(--bg-color-blue);
+  color: var(--text-color-dark);
 }
 
 .contactForm {
   background-color: var(--bg-color-blue);
+  color: var(--text-color-dark);
 }
 
 .FooterSection {
   background-color: var(--text-color-dark);
+  color: #fff;
 }
 
 .featuresection-bottom-container {
@@ -55,22 +60,11 @@
   border-radius: 150px 0 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
-  color: var(--text-color-dark);
-}
-
 .HeroSection {
   background-image: "url(image/cover-img.jpg)";
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
-}
-
-.HeroSection h1, h2, h3, h4, h5, h6, p, a {
-  color: #fff;
-}
-
-.FooterSection h1, h2, h3, h4, h5, h6, p, a {
   color: #fff;
 }
 

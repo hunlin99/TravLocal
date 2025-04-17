@@ -53,7 +53,7 @@ const AnimatedStepsSection = () => {
           { opacity: 1 },
           0.5 // same as mask fade end
         );
-        
+
       }
     }, wrapperRef);
 
@@ -72,11 +72,15 @@ const AnimatedStepsSection = () => {
         />
 
         {/* ✅ This is the final visible content, centered under the mask */}
-        <div className={`${styles.ctaContent} container text-white py-5 text-center mt-5`}>
+        <div className={`${styles.ctaContent} container text-dark py-5 text-center mt-5`}>
           <h1>Ready for Authentic Adventures?</h1>
-          <div className="pt-5 d-flex justify-content-center">
-            <a className="mx-3 btn btn-light btn-lg px-4" href="#">App Store</a>
-            <a className="mx-3 btn btn-light btn-lg px-4" href="#">Google Play</a>
+          <div className="pt-5 d-flex justify-content-center align-items-center">
+            <a href="#" className="mx-3">
+              <img src="/image/app-store-btn.png" alt="Download on the App Store" height="60" />
+            </a>
+            <a href="#" className="mx-3">
+              <img src="/image/google-play-btn.png" alt="Get it on Google Play" height="60" />
+            </a>
           </div>
         </div>
 

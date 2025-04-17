@@ -1,0 +1,187 @@
+/* [project]/src/components/navigation/Nav.module.css [app-client] (css) */
+.Nav-module__CBhHSW__checkbox {
+  display: none;
+}
+
+.Nav-module__CBhHSW__button {
+  position: relative;
+  background-color: #fff;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  z-index: 2000;
+  box-shadow: .15em .15em #4b819e;
+  border: .1rem solid #4b819e;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Nav-module__CBhHSW__background {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 5.5vh;
+  right: 5.5vw;
+  background-color: #fff2df;
+  z-index: 1000;
+  transition: transform .8s cubic-bezier(.86, 0, .07, 1);
+}
+
+.Nav-module__CBhHSW__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -60vw;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all .8s;
+}
+
+.Nav-module__CBhHSW__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.Nav-module__CBhHSW__item {
+  margin: 1rem;
+  font-size: 36px;
+}
+
+.Nav-module__CBhHSW__link:link, .Nav-module__CBhHSW__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: var(--text-color-dark);
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, #0000 0% 50%, #fff 50%);
+  background-size: 220%;
+  transition: all .4s;
+}
+
+.Nav-module__CBhHSW__link:hover, .Nav-module__CBhHSW__link:active {
+  color: var(--bg-color-blue);
+  cursor: pointer;
+}
+
+.Nav-module__CBhHSW__checkbox:checked ~ .Nav-module__CBhHSW__background {
+  transform: scale(80);
+}
+
+.Nav-module__CBhHSW__checkbox:checked ~ .Nav-module__CBhHSW__nav {
+  opacity: 1;
+  width: 100%;
+  right: 0;
+}
+
+.Nav-module__CBhHSW__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Nav-module__CBhHSW__icon, .Nav-module__CBhHSW__icon:before, .Nav-module__CBhHSW__icon:after {
+  width: 2rem;
+  height: 2px;
+  background-color: #4b819e;
+  display: inline-block;
+}
+
+.Nav-module__CBhHSW__icon:before, .Nav-module__CBhHSW__icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all .2s;
+}
+
+.Nav-module__CBhHSW__icon:before {
+  top: -.8rem;
+}
+
+.Nav-module__CBhHSW__icon:after {
+  top: .8rem;
+}
+
+.Nav-module__CBhHSW__button:hover icon:before {
+  top: -1rem;
+}
+
+.Nav-module__CBhHSW__button:hover icon:after {
+  top: 1rem;
+}
+
+.Nav-module__CBhHSW__checkbox:checked + .Nav-module__CBhHSW__button .Nav-module__CBhHSW__icon {
+  background-color: #0000;
+}
+
+.Nav-module__CBhHSW__checkbox:checked + .Nav-module__CBhHSW__button .Nav-module__CBhHSW__icon:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.Nav-module__CBhHSW__checkbox:checked + .Nav-module__CBhHSW__button .Nav-module__CBhHSW__icon:after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+
+/* [project]/src/components/ActionRevealSection.module.css [app-client] (css) */
+.ActionRevealSection-module__1Ejo-q__maskSection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ActionRevealSection-module__1Ejo-q__backgroundImage {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.ActionRevealSection-module__1Ejo-q__maskWrapper {
+  min-height: 100vh;
+}
+
+.ActionRevealSection-module__1Ejo-q__videoMask {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: lighten;
+}
+
+.ActionRevealSection-module__1Ejo-q__clipText {
+  font-size: 12vw;
+  font-weight: bold;
+  color: #000;
+}
+
+.ActionRevealSection-module__1Ejo-q__ctaContent {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 100%;
+  max-width: 960px;
+}
+
+
+/*# sourceMappingURL=src_components_8ba3558f._.css.map*/

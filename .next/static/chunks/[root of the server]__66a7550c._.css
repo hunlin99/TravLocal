@@ -1,8 +1,8 @@
 /* [next]/internal/font/google/gyByhwUxId8gMEwSGFWNOITddY4-s.woff2 (static in css) */
-/* embedded static asset "/TravLocal/_next/static/media/gyByhwUxId8gMEwSGFWNOITddY4-s.81df3a5b.woff2" */
+/* embedded static asset "/_next/static/media/gyByhwUxId8gMEwSGFWNOITddY4-s.81df3a5b.woff2" */
 
 /* [next]/internal/font/google/gyByhwUxId8gMEwcGFWNOITd-s.p.woff2 (static in css) */
-/* embedded static asset "/TravLocal/_next/static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2" */
+/* embedded static asset "/_next/static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2" */
 
 /* [next]/internal/font/google/geist_e531dabc.module.css [app-client] (css) */
 @font-face {
@@ -43,10 +43,10 @@
 
 
 /* [next]/internal/font/google/or3nQ6H_1_WfwkMZI_qYFrkdmhHkjkotbA-s.woff2 (static in css) */
-/* embedded static asset "/TravLocal/_next/static/media/or3nQ6H_1_WfwkMZI_qYFrkdmhHkjkotbA-s.e32db976.woff2" */
+/* embedded static asset "/_next/static/media/or3nQ6H_1_WfwkMZI_qYFrkdmhHkjkotbA-s.e32db976.woff2" */
 
 /* [next]/internal/font/google/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.woff2 (static in css) */
-/* embedded static asset "/TravLocal/_next/static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2" */
+/* embedded static asset "/_next/static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2" */
 
 /* [next]/internal/font/google/geist_mono_68a01160.module.css [app-client] (css) */
 @font-face {
@@ -98,23 +98,28 @@
 }
 
 .FeatureSection {
-  background-color: ver(--bg-color-beige);
+  background-color: var(--bg-color-beige);
+  color: var(--text-color-dark);
 }
 
 .AnimatedStepsSection {
   background-color: var(--bg-color-beige);
+  color: var(--text-color-dark);
 }
 
 .ProfileSection {
   background-color: var(--bg-color-blue);
+  color: var(--text-color-dark);
 }
 
 .contactForm {
   background-color: var(--bg-color-blue);
+  color: var(--text-color-dark);
 }
 
 .FooterSection {
   background-color: var(--text-color-dark);
+  color: #fff;
 }
 
 .featuresection-bottom-container {
@@ -143,22 +148,11 @@
   border-radius: 150px 0 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
-  color: var(--text-color-dark);
-}
-
 .HeroSection {
   background-image: "url(image/cover-img.jpg)";
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
-}
-
-.HeroSection h1, h2, h3, h4, h5, h6, p, a {
-  color: #fff;
-}
-
-.FooterSection h1, h2, h3, h4, h5, h6, p, a {
   color: #fff;
 }
 
