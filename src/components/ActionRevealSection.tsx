@@ -66,7 +66,7 @@ const AnimatedStepsSection = () => {
     <section className={styles.maskSection} ref={wrapperRef}>
       <div className={styles.maskWrapper}>
         <img
-          src="/image/cover-img-2.jpg"
+          src="/TravLocal/image/cover-img-2.jpg"
           alt="Visual"
           className={styles.backgroundImage}
         />

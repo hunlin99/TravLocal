@@ -41,7 +41,7 @@ const AnimatedStepsSection = () => {
       <div className="vw-100 vh-80 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
         <div className="col-4 d-flex align-items-center justify-content-center">Get start</div>
         <div className="col-4 start"><Image
-          src="/image/AnimatedPhoneSection-1.png"
+          src="/TravLocal/image/AnimatedPhoneSection-1.png"
           alt="Phone preview"
           layout="responsive"
           width={1}
@@ -56,7 +56,7 @@ const AnimatedStepsSection = () => {
       <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
         <div className="col-4 d-flex align-items-center justify-content-center">Free ticket</div>
         <div className="col-4"><Image
-          src="/image/AnimatedPhoneSection-2.png"
+          src="/TravLocal/image/AnimatedPhoneSection-2.png"
           alt="Phone preview"
           layout="responsive"
           width={1}
@@ -71,7 +71,7 @@ const AnimatedStepsSection = () => {
       <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
         <div className="col-4 d-flex align-items-center justify-content-center">Find your Guide</div>
         <div className="col-4"><Image
-          src="/image/AnimatedPhoneSection-3.png"
+          src="/TravLocal/image/AnimatedPhoneSection-3.png"
           alt="Phone preview"
           layout="responsive"
           width={1}
@@ -101,7 +101,7 @@ const AnimatedStepsSection = () => {
       <div className="vw-100 step fs-1 position-absolute row" style={{ opacity: 0, transform: "translateY(50px)" }}>
         <div className="col-4 d-flex align-items-center justify-content-center">Explore more</div>
         <div className="col-4"><Image
-          src="/image/AnimatedPhoneSection-5.png"
+          src="/TravLocal/image/AnimatedPhoneSection-5.png"
           alt="Phone preview"
           layout="responsive"
           width={1}
