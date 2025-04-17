@@ -37,7 +37,7 @@ const About = () => {
       {/* Image Showcase */}
       <div
         className="py-5 bg-image-full"
-        style={{ backgroundImage: "url('/TravLocal/image/app-mockup-14.png')" }}
+        style={{ backgroundImage: "url('/TravLocal/image/app-mockup-18.png')" }}
       >
         <div style={{ height: "20rem" }}></div>
       </div>
