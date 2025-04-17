@@ -13,19 +13,24 @@
 Back Ground color
 ----------------------------------------------------------------------- */
 .FeatureSection{
-  background-color: ver(--bg-color-beige);
+  background-color: var(--bg-color-beige);
+  color: var(--text-color-dark);
 }
 .AnimatedStepsSection{
   background-color: var(--bg-color-beige);
+  color: var(--text-color-dark);
 }
 .ProfileSection{
   background-color: var(--bg-color-blue);
+  color: var(--text-color-dark);
 }
 .contactForm{
   background-color: var(--bg-color-blue);
+  color: var(--text-color-dark);
 }
 .FooterSection{
   background-color: var(--text-color-dark);
+  color: white;
 }
 
 /*---------------------------------------------------------------------- /
@@ -55,9 +60,7 @@ blocks between sections
   border-radius: 150px 0 0 0;
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
-  color: var(--text-color-dark);
-}
+
 
 
 /*---------------------------------------------------------------------- /
@@ -68,13 +71,8 @@ Hero Section{
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
+  color: white;
 
-}
-.HeroSection h1,h2,h3,h4,h5,h6,p,a{
-  color: white;
-}
-.FooterSection h1,h2,h3,h4,h5,h6,p,a{
-  color: white;
 }
 
 /*---------------------------------------------------------------------- /
