@@ -6,6 +6,7 @@ import Nav from "@/components/navigation/Nav";
 
 export default function ContactPage() {
   return (
+    <>
     <section className="contactForm p-5">
       <HamburgerMenu />
       <Nav />
@@ -38,8 +39,9 @@ export default function ContactPage() {
         </button>
       </form>
     </div>
-    <Footer />
     </ section>
+    <Footer />
+    </>
     
   );
 }
